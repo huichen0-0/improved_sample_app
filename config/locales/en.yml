@@ -1,0 +1,143 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  warning_login: "Please log in!"
+  warning_edit: "You cannot edit this account!"
+  warning_not_found: "Not found user!"
+  warning_not_valid: "User is in_activated!"
+
+  account_activations:
+    edit:
+      success: "Account activated!"
+      fail: "Invalid activation link!"
+
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+
+  password_resets:
+    new:
+      title: "FORGOT PASSWORD"
+      heading: "Forgot Password"
+      submit: "Submit"
+    create:
+      success: "Email sent with password reset instructions!"
+      fail: "Email address not found!"
+    edit:
+      title: "RESET PASSWORD"
+      heading: "Reset password"
+      submit: "Update password"
+    update:
+      expired: "Password reset has expired!"
+      success: "Password has been reset!"
+      error: "can't be empty!"
+
+  sessions:
+    new:
+      title: "LOG IN"
+      heading: "Log in"
+      submit: "Log in"
+      remember_me: "Remember me on this computer"
+    create:
+      invalid: "Email or password is incorrect!"
+      not_activated: >
+        Account has not been activated!
+        Check your email for the activation link.
+
+  shared:
+    error_messages:
+      errors: "errors"
+
+  static_pages:
+    help:
+      title: "HELP"
+      heading: "Help"
+      rails_tutorial_help: "Get help on the Ruby on Rails Tutorial at the"
+      rails_tutorial_help_link: "Rails Tutorial help page"
+      sample_app_help: "To get help on this sample app, see the"
+      ruby_on_rails_tutorial_book: "Ruby on RailsTutorial book"
+    home:
+      title: "HOME"
+      heading: "Welcome to the Sample App"
+      rails_tutorial_home: "This is the home page for the"
+      rails_tutorial_link: "Ruby on Rails Tutorial"
+      sample_app: "sample application"
+
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      link: "Activate"
+      subject: "Account activation"
+      content: >
+        Welcome to the Sample App!
+        Click on the link below to activate your account:
+    password_reset:
+      heading: "Password reset"
+      subject: "Password reset"
+      link: "Password reset link!"
+      content_1: "To reset your password click the link below:"
+      content_2: >
+        This link will expire in two hours.
+        If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is.
+
+  users:
+    index:
+      title: "ALL USERS"
+      heading: "All users"
+    new:
+      title: "SIGN UP"
+      heading: "Sign up"
+      submit: "Create my account"
+    create:
+      notification: "Please check your email to activate your account."
+    show:
+      not_found_user: "Not found user!"
+    edit:
+      title: "EDIT USER"
+      heading: "Update your profile"
+      submit: "Save changes"
+    update:
+      success: "Update user successfully!"
+    destroy:
+      success: "Successfully deleted user!"
+      fail: "User deletion failed!"
+    user:
+      notice: "Are you sure?"
+
+  activerecord:
+      models:
+        user: "User"
+      attributes:
+        user:
+          name: "Name"
+          email: "Email"
